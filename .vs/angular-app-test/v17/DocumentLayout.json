@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,7 +40,7 @@
               "RelativeDocumentMoniker": "src\\app\\catalog\\catalog.component.ts",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\angular-app-test\\src\\app\\catalog\\catalog.component.ts",
               "RelativeToolTip": "src\\app\\catalog\\catalog.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-03-12T20:03:45.939Z",
               "EditorCaption": ""
@@ -59,8 +55,7 @@
               "RelativeToolTip": "src\\app\\catalog\\catalog.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-12T20:03:44.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T20:03:44.064Z"
             },
             {
               "$type": "Document",
@@ -72,8 +67,7 @@
               "RelativeToolTip": "src\\app\\product-details\\product-details.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-12T20:03:36.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T20:03:36.799Z"
             },
             {
               "$type": "Document",
@@ -85,8 +79,7 @@
               "RelativeToolTip": "src\\app\\product-details\\product-details.component.spec.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-12T20:03:35.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T20:03:35.97Z"
             },
             {
               "$type": "Document",
@@ -98,8 +91,7 @@
               "RelativeToolTip": "src\\app\\product-details\\product-details.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-12T20:03:31.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T20:03:31.638Z"
             }
           ]
         }

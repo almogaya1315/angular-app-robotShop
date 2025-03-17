@@ -3,12 +3,12 @@
 
       <!-- <img [src]="'/assets/images/robot-parts/' + product.imageName" [alt]="product.name" /> -->
       <!-- <img src="{{'/assets/images/robot-parts/' + product.imageName}}" alt="{{product.name}}" /> -->
-      <img src="{{getImageUrl(product)}}" [alt]="product?.name" />
+      <img src="{{getImageUrl(product)}}" [alt]="product.name" />
       
       <div class="product-info">
-        <div class="name">{{ product?.name }}</div>
-        <div class="description">{{ product?.description }}</div>
-        <div class="category">Part Type: {{ product?.category }}</div>
+        <div class="name">{{ product.name }}</div>
+        <div class="description">{{ product.description }}</div>
+        <div class="category">Part Type: {{ product.category }}</div>
       </div>
     </div>
     <div class="price">
