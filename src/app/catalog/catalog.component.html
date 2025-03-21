@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="user">
     <div class="filters">
       <!-- <a class="button" (click)="filter='Heads'">Heads</a>
       <a class="button" (click)="filter='Arms'">Arms</a>
@@ -20,8 +20,6 @@
       <a class="button" routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >All</a>
 
     </div>
-
-    <!-- <div>{{filter}}</div> -->
   
     <ul class="products">
       <li class="product-item" *ngFor="let product of getFilteredProducts()">

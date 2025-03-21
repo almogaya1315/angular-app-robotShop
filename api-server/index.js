@@ -8,6 +8,7 @@ app.use(bodyParser.json());
     ***NEVER*** store credentials unencrypted like this.
     This is for demo purposes only in order to simulate a functioning API serverr.
 */
+
 const users = {
   "jim@joesrobotshop.com": {
     firstName: "Jim",
@@ -21,7 +22,38 @@ const users = {
     email: "joe@joesrobotshop.com",
     password: "super-secret",
   },
+  "liormatsliah1985@gmail.com": {
+    firstName: "Lior",
+    lastName: "Matsliah",
+    email: "liormatsliah1985@gmail.com",
+    password: "123",
+  },
 };
+app.get("/api/users", (req, res) => {
+  let users = {
+    "jim@joesrobotshop.com": {
+      firstName: "Jim",
+      lastName: "Cooper",
+      email: "jim@joesrobotshop.com",
+      password: "very-secret",
+    },
+    "joe@joesrobotshop.com": {
+      firstName: "Joe",
+      lastName: "Eames",
+      email: "joe@joesrobotshop.com",
+      password: "super-secret",
+    },
+    "liormatsliah1985@gmail.com": {
+      firstName: "Lior",
+      lastName: "Matsliah",
+      email: "liormatsliah1985@gmail.com",
+      password: "123",
+    },
+  };
+  res.send(users);
+});
+
+
 let cart = [];
 
 // use this to add a 1 second delay to all requests
@@ -246,7 +278,7 @@ app.post("/api/sign-in", (req, res) => {
       email: user.email,
     });
   } else {
-    res.status(401).send("Invalid user credentials.");
+    res.status(401).send("Invalid user credentials");
   }
 });
 

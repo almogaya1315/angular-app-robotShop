@@ -3,6 +3,8 @@ import { IProduct } from './product.model';
 import { CartService } from '../cart/cart.service';
 import { ProductService } from './product.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { IUser } from '../user/user.model';
+import { UserService } from '../user/user.service';
 
 @Component({
   selector: 'bot-catalog',
@@ -11,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   // styles: ['a {font-weight: bold;}']
 })
 export class CatalogComponent {
+  user: IUser | null = null;
   products: IProduct[] = [];
   filter: string = '';
   //private cartSvc: CartService = inject(CartService)
@@ -21,7 +24,8 @@ export class CatalogComponent {
     private cartSvc: CartService, 
     private productSvc: ProductService, 
     private router: Router,
-    private route: ActivatedRoute){
+    private route: ActivatedRoute,
+    private userSvc: UserService){
     // this.products = [
     //   {
     //     id: 1,
@@ -207,6 +211,10 @@ export class CatalogComponent {
     //this.route.params.subscribe((params) => {
     this.route.queryParams.subscribe((params) => {
       this.filter = params['filter'] ?? '';
+    });
+
+    this.userSvc.getUser().subscribe({
+      next: (user) => { this.user = user } 
     });
   }
 
