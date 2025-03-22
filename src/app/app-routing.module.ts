@@ -21,6 +21,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
+
+  //BEACUSE OF THIS, NO NEED TO IMPORT IN app.modile.ts
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

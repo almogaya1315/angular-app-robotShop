@@ -9,9 +9,13 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { SiteHeaderComponent } from './site-header/site-header.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
+
+//IS NOT IMPORTED BY @NgModule BECAUSE IT EXPORTS IN app-routing.module.ts -> exports: [RouterModule]
 import { AppRoutingModule } from './app-routing.module';
-import { SignInComponent } from './user/sign-in/sign-in.component';
-import { TemplateFormControlsComponent } from './user/template-form-controls/template-form-controls.component';
+import { UserModule } from './user/user.module';
+
+// import { SignInComponent } from './user/sign-in/sign-in.component';
+// import { TemplateFormControlsComponent } from './user/template-form-controls/template-form-controls.component';
 
 
 @NgModule({
@@ -22,15 +26,17 @@ import { TemplateFormControlsComponent } from './user/template-form-controls/tem
     SiteHeaderComponent,
     ProductDetailsComponent,
     CartComponent,
-    SignInComponent,
-    TemplateFormControlsComponent
+    //SignInComponent,
+    //TemplateFormControlsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, //NEEDED HERE AND IN EACH FEATURE MODULE
     ReactiveFormsModule,
+    UserModule
+    //NO NEED TO IMPORT -> AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
